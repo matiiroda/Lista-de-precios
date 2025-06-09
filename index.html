@@ -54,12 +54,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Botón con Logo Samsung</title>
+<title>Botón Samsung con redirección</title>
 <style>
   .btn-samsung {
     display: flex;
     align-items: center;
-    background-color: #edf1f2; /* color azul Samsung */
+    background-color: #edf1f2; /* azul Samsung */
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -67,27 +67,34 @@
     font-weight: bold;
     cursor: pointer;
     font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
   }
 
   .btn-samsung img {
-    height: 24px;
+    height: 42px;
     margin-right: 10px;
+    transition: transform 0.3s ease;
   }
 
   .btn-samsung:hover {
     background-color: #edf1f2;
   }
+
+  .btn-samsung:hover img {
+    transform: scale(1.3);
+  }
 </style>
 </head>
 <body>
 
-<button class="btn-samsung">
+<button class="btn-samsung" onclick="window.location.href='Samsung.html'">
   <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" alt="Samsung Logo" />
-  
+
 </button>
 
 </body>
 </html>
+
 
 
 
