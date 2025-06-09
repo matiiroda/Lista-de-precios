@@ -102,23 +102,50 @@
     </thead>
 
     
+
+    
       
     
 
 
     <tbody>
-      <tr><td>A3 2016 (SM-A310M)</td><td>5000</td><td>4000</td><td>4000</td><td>5000</td></tr>
-      <tr><td>A5 2016 (SM-A510M)</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>A7 2016 (SM-A710M)</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>Grand Prime (SM-G530M, SM-G531M, SM-G531F)</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>J1 Mini/Ace/2016/Nxt (SM-J100MU, J110M, etc.)</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>J2/J2 Pro/J2 Prime (SM-J200M, J250M, G532G...)</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>J3 2016 (SM-J320M)</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>J7 2015/2016 (SM-J700M, J710MN, J701M)</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>S3 (GT-I9300)</td><td>-</td><td>-</td><td>-</td></tr>
-      <tr><td>S6 Flat/Edge/Plus (SM-G920I, G925I, G928G)</td><td>-</td><td>-</td><td>-</td></tr>
+      <tr><td>A3 2016 (SM-A310M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>A5 2016 (SM-A510M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>A7 2016 (SM-A710M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>Grand Prime (SM-G530M, SM-G531M, SM-G531F)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>J1 2016 (SM-J100MU)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>J1 Ace (SM-J110M; SM-J111M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>J1 Mini (SM-J105M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>J1 Mini Prime (SM-J106M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>J2 - J2 Pro (SM-J200M / SM-J250M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>J2 Prime (SM-G532M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>J3 2016 (SM-J320M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>J7 - 2015 (SM-J700M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>J7 2016 (SM-J710MN)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>S6 Flat (SM-G920I; SM-G920F)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>S6 Edge (SM-G925I; SM-G925F)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>S6 Plus (SM-G928G; SM-G928F)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>S7 Flat/Edge (SM-G930F, SM-G935F)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+      <tr><td>Note 5 (SM-N920G)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+      <tr><td>Note 5 (SM-N920G)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+      <tr><td>Note 5 (SM-N920G)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+      <tr><td>Note 5 (SM-N920G)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+      <tr><td>Note 5 (SM-N920G)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+      <tr><td>Note 5 (SM-N920G)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+
+
+      
+
       <!-- Puedes segauir agregando más filas aquí -->
+
+
+      
     </tbody>
+
+    
+    
+    
+
   </table>
 
   <p class="note">💡 Precios sujetos a cambio sin previo aviso. Para más información o modelos, contáctanos.</p>
@@ -136,4 +163,28 @@
   </script>
 
 </body>
+
+<script>
+  // Índices de las columnas que contienen precios
+  const columnasConPesos = [1, 2, 3, 4]; // Segunda, tercera y cuarta columna
+
+  // Recorre cada fila del cuerpo de la tabla
+  const filas = document.querySelectorAll('#priceTable tbody tr');
+
+  filas.forEach(fila => {
+    columnasConPesos.forEach(i => {
+      const celda = fila.cells[i];
+      const valor = parseFloat(celda.textContent);
+
+      if (!isNaN(valor)) {
+        celda.textContent = '$' + valor.toLocaleString('es-MX', {
+          minimumFractionDigits: 0,
+          maximumFractionDigits: 0
+        });
+      }
+    });
+  });
+</script>
+
+
 </html>
