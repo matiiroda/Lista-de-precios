@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Precios - Software</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    #search {
+      width: 100%;
+      padding: 10px;
+      margin: 20px 0;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+    }
+
+    th, td {
+      text-align: center;
+      padding: 12px;
+      border: 1px solid #ddd;
+      font-size: 14px;
+    }
+
+    th {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .note {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 13px;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      th {
+        display: none;
+      }
+
+      td {
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+      }
+
+      td::before {
+        position: absolute;
+        left: 10px;
+        top: 12px;
+        white-space: nowrap;
+        font-weight: bold;
+      }
+
+      td:nth-child(1)::before { content: "Modelo"; }
+      td:nth-child(2)::before { content: "FRP (ARS)"; }
+      td:nth-child(3)::before { content: "T2 (ARS)"; }
+      td:nth-child(4)::before { content: "Flash (ARS)"; }
+      td:nth-child(5)::before { content: "T2+FRP (ARS)"; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💻 Lista de Precios - Software Samsung</h1>
+
+  <input type="text" id="search" placeholder="🔍 Buscar modelo...">
+
+  <table id="priceTable">
+    <thead>
+      <tr>
+        
+        <th>Modelo</th>
+        <th>FRP (ARS)</th>
+        <th>T2 (ARS)</th>
+        <th>Flash (ARS)</th>
+        <th>T2+FRP (ARS)</th>
+      </tr>
+    </thead>
+
+    
+
+    
+      
+    
+
+
+    <tbody>
+      <tr><td>A3 2016 (SM-A310M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>A5 2016 (SM-A510M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>A7 2016 (SM-A710M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>Grand Prime (SM-G530M, SM-G531M, SM-G531F)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>J1 2016 (SM-J100MU)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>J1 Ace (SM-J110M; SM-J111M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>J1 Mini (SM-J105M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>J1 Mini Prime (SM-J106M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>J2 - J2 Pro (SM-J200M / SM-J250M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>J2 Prime (SM-G532M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>J3 2016 (SM-J320M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>J7 - 2015 (SM-J700M)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>J7 2016 (SM-J710MN)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>S6 Flat (SM-G920I; SM-G920F)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>S6 Edge (SM-G925I; SM-G925F)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>S6 Plus (SM-G928G; SM-G928F)</td><td>4000</td><td>5000</td><td>4000</td><td>7000</td></tr>
+      <tr><td>S7 Flat/Edge (SM-G930F, SM-G935F)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+      <tr><td>A01 Core (SM-A013M)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+      <tr><td>J2 Core (SM-J260M)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+      <tr><td>J4 (SM-J400M)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+      <tr><td>J5 Prime (SM-G570M)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+      <tr><td>J6 (SM-J600G)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+      <tr><td>J7 Neo (SM-J701M)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+      <tr><td>J7 Prime (SM-G610M)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+      <tr><td>J7 Pro (SM-J730G)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+      <tr><td>A5 2017 (SM-A520F)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+      <tr><td>A7 2017 (SM-A720F)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+      <tr><td>A7 2018 (SM-A750G)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+      <tr><td>A8 2018 (SM-A530F)</td><td>5000</td><td>7000</td><td>4000</td><td>10000</td></tr>
+      <tr><td>A02 (SM-A022M)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>A03 (SM-A035M)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>A03S (SM-A037M)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>A03 Core (SM-A032M)</td><td>6000</td><td>Solo bit 1 $10,000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>A10S (SM-A107M)</td><td>6000</td><td>Hasta bit 5 $10,000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>A10 (SM-A105M)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>A12 (SM-A125M)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>A12 (SM-A127M)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>A20 (SM-A205G)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>A21S (SM-A217M)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>A22 (SM-A225M)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>A22 5G (SM-A226BR)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>A30 (SM-A305G)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>A30S (SM-A307G)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>A31 (SM-A315G)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>A32 (SM-A325M)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>A50 (SM-A505G)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>A51 (SM-A515F)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>S8/S8Plus (SM-G950F/SM-G955F)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>S9/S9Plus (SM-G960F/SM-G965F)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>Note 8 (SM-N950F)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>Note 9 (SM-N960F)</td><td>6000</td><td>10000</td><td>5000</td><td>15000</td></tr>
+      <tr><td>A04 (SM-A045M)</td><td>10000</td><td>15000</td><td>8000</td><td>20000</td></tr>
+      <tr><td>A04e (SM-A042M)</td><td>10000</td><td>15000</td><td>8000</td><td>20000</td></tr>
+      <tr><td>A04s (SM-A047M)</td><td>10000</td><td>15000</td><td>8000</td><td>20000</td></tr>
+      <tr><td>A05 (SM-A055M)</td><td>10000</td><td>15000</td><td>8000</td><td>20000</td></tr>
+      <tr><td>A13 (SM-A135M)</td><td>10000</td><td>15000</td><td>8000</td><td>20000</td></tr>
+      <tr><td>A14 (SM-A145M)</td><td>10000</td><td>15000</td><td>8000</td><td>20000</td></tr>
+      <tr><td>A14 5G (SM-A146M)</td><td>10000</td><td>15000</td><td>8000</td><td>20000</td></tr>
+      <tr><td>A25 5G (SM-A256E)</td><td>10000</td><td>15000</td><td>8000</td><td>20000</td></tr>
+      <tr><td>A33 5G (SM-A336M)</td><td>10000</td><td>15000</td><td>8000</td><td>20000</td></tr>
+      <tr><td>A34 5G (SM-A346M)</td><td>10000</td><td>15000</td><td>8000</td><td>20000</td></tr>
+      <tr><td>S10e (SM-G970F)</td><td>10000</td><td>25000</td><td>8000</td><td>30000</td></tr>
+      <tr><td>S10 (SM-G973F)</td><td>10000</td><td>25000</td><td>8000</td><td>30000</td></tr>
+      <tr><td>S10+ (SM-G975F)</td><td>10000</td><td>25000</td><td>8000</td><td>30000</td></tr>
+      <tr><td>Note 10 (SM-N970F)</td><td>10000</td><td>25000</td><td>8000</td><td>30000</td></tr>
+      <tr><td>Note 10 Lite (SM-N770F)</td><td>10000</td><td>25000</td><td>8000</td><td>30000</td></tr>
+      <tr><td>Note 10+ (SM-N975F)</td><td>10000</td><td>25000</td><td>8000</td><td>30000</td></tr>
+      <tr><td>A53 (SM-A536E)</td><td>15000</td><td>35000</td><td>10000</td><td>45000</td></tr>
+      <tr><td>A54 (SM-A546E)</td><td>15000</td><td>35000</td><td>10000</td><td>45000</td></tr>
+      <tr><td>S20FE (SM-G780F)</td><td>15000</td><td>35000</td><td>10000</td><td>45000</td></tr>
+      <tr><td>S20 (SM-G980F)</td><td>15000</td><td>35000</td><td>10000</td><td>45000</td></tr>
+      <tr><td>S20+ (SM-G985F)</td><td>15000</td><td>35000</td><td>10000</td><td>45000</td></tr>
+      <tr><td>S20 Ultra (SM-G988B)</td><td>15000</td><td>35000</td><td>10000</td><td>45000</td></tr>
+      <tr><td>Note 20 Ultra (SM-N985F)</td><td>15000</td><td>35000</td><td>10000</td><td>45000</td></tr>
+      <tr><td>S21 (SM-G991B)</td><td>15000</td><td>35000</td><td>10000</td><td>45000</td></tr>
+      <tr><td>S21+ (SM-G996B)</td><td>15000</td><td>35000</td><td>10000</td><td>45000</td></tr>
+      <tr><td>S21 Ultra (SM-G998B)</td><td>15000</td><td>35000</td><td>10000</td><td>45000</td></tr>
+
+
+
+      
+
+      <!-- Puedes segauir agregando más filas aquí -->
+
+
+      
+    </tbody>
+
+    
+    
+    
+
+  </table>
+
+  <p class="note">💡 Precios sujetos a cambio sin previo aviso. Para más información o modelos, contáctanos.</p>
+
+  <script>
+    const searchInput = document.getElementById("search");
+    searchInput.addEventListener("keyup", function () {
+      const filter = searchInput.value.toLowerCase();
+      const rows = document.querySelectorAll("#priceTable tbody tr");
+      rows.forEach(row => {
+        const modelo = row.cells[0].textContent.toLowerCase();
+        row.style.display = modelo.includes(filter) ? "" : "none";
+      });
+    });
+  </script>
+
+</body>
+
+<script>
+  // Índices de las columnas que contienen precios
+  const columnasConPesos = [1, 2, 3, 4]; // Segunda, tercera y cuarta columna
+
+  // Recorre cada fila del cuerpo de la tabla
+  const filas = document.querySelectorAll('#priceTable tbody tr');
+
+  filas.forEach(fila => {
+    columnasConPesos.forEach(i => {
+      const celda = fila.cells[i];
+      const valor = parseFloat(celda.textContent);
+
+      if (!isNaN(valor)) {
+        celda.textContent = '$' + valor.toLocaleString('es-MX', {
+          minimumFractionDigits: 0,
+          maximumFractionDigits: 0
+        });
+      }
+    });
+  });
+</script>
+
+
+</html>
